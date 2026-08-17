@@ -5,7 +5,7 @@
  */
 window.SITE_CONFIG = {
   businessName: "Emanueli Tours and Safari",
-  guideName: "Emanuele",
+  guideName: "Emanueli",
 
   // IMPORTANT: replace with the real WhatsApp number in international format,
   // digits only, no "+", no spaces (e.g. Tanzania mobile => "2557XXXXXXXX").

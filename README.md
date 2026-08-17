@@ -8,7 +8,7 @@ no dependencies to install.** Deploys as-is to Vercel or GitHub Pages.
 
 ```
 index.html            Home
-about.html             About Emanuele
+about.html             About Emanueli
 destinations.html      Serengeti / Ngorongoro / Tarangire / Lake Manyara / Kogatende
 tours.html              7 safari packages, itineraries & pricing
 gallery.html           Photo & video gallery

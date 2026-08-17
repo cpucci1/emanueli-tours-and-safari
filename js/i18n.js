@@ -17,8 +17,20 @@
   var STORAGE_KEY = "emanueli_lang";
   var cache = new WeakMap();
 
+  function detectBrowserLang() {
+    var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+    for (var i = 0; i < langs.length; i++) {
+      if (/^fr/i.test(langs[i])) return "fr";
+      if (/^en/i.test(langs[i])) return "en";
+    }
+    return "en";
+  }
+
   function getCurrentLang() {
-    return localStorage.getItem(STORAGE_KEY) || "en";
+    var stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) return stored;
+    // First visit: greet French-speaking browsers in French automatically.
+    return detectBrowserLang();
   }
   window.getCurrentLang = getCurrentLang;
 
